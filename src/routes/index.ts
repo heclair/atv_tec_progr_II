@@ -1,12 +1,15 @@
 import { Router } from "express";
 //import category from "./category";
 //import product from "./product";
-import users from "./";
+import estado from "./estado";
+import user from "./user";
+import cidade from "./cidade";
 
 const router = Router();
 
-//router.use("/categoria", category);
-//router.use("/produto", product);
-router.use("/usuario", users);
+router.use("/cidade", cidade);
+router.use("/estado", estado);
+router.use("/usuario", user);
+
 
 export default router;

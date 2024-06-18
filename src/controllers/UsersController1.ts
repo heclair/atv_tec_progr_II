@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { Users } from "../models";
 
-class UsersController {
+class UserController {
     public async create(req: Request, res: Response): Promise<void> {
         const { user_cpf, user_created_at, user_email, user_fone, user_nome, user_password, user_updated_at, user_usuario, user } = req.body;
         try {
@@ -19,4 +19,4 @@ class UsersController {
 
 };
 
-export default new UsersController();
+export default new UserController();
